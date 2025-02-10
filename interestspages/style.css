@@ -1,0 +1,16 @@
+body {font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+background-color:bisque;
+}
+#special{font-family: cursive;}
+h1 {color:#2F2F2F !important;}
+h2 {color: #2F2F2F !important;}
+p{color: #8B4513} 
+main{color: #8B4513}
+footer{color:#4682B4}
+blockquote{color:#8B4513}
+li{color:#8B4513}
+span{color:red}
+.bold{font-style: italic;
+color: #C04000}
+.boring{color: Gray}
