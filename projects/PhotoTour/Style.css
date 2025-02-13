@@ -17,6 +17,7 @@ main {
     color: red;
     background-image: url(256px-WorldMap.png) ;
 }
+main[index]{    background-image: url(256px-WorldMap.png) ;}
 
 span {
     color: rgb(212, 68, 68);
