@@ -1,0 +1,16 @@
+
+body {font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+background-image: url(Img.webp);
+}
+
+
+header{background-color: red;
+width:100px; 
+margin:100px; 
+padding:50px; 
+border: thick solid black;
+}
+
+
+header h1{border: thick solid black;
+}
