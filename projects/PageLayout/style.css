@@ -1,0 +1,57 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 4px #000000;
+}
+body {font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+font-style: italic;
+line-height: 1.6;
+background-color: green;
+}
+
+nav a {
+  margin-top: 5% ;
+  text-decoration: none;
+  color: black;
+  padding: 3%;
+  margin: 7%;
+  border-radius: 30px;
+  background-color: green;
+  box-shadow: 20px 30px 50px #000000;
+  box-align: right;
+  border:3px solid
+
+}
+
+.Flag{clear: both;
+    float: right;
+ }
+
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+main {
+    padding-top: 5%;
+    padding-bottom: 45%;}
+
+
+
+#wrapper {width: 80%;
+        height: 100%;
+        margin: 7.5%;
+        margin-top: 7.5%;
+        padding-bottom: 30%;
+        overflow: hidden;
+        background-color: yellow;
+        padding: 20px;
+        border-radius: 10px;
+}
+
+
+
