@@ -1,0 +1,36 @@
+body{font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.nav{display:flex;
+justify-content: space-evenly;
+background-color: aqua;}
+
+.row{display:flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.nav a{display:block;
+padding: 10px;
+background-color: orange;
+text-decoration: none;
+border-radius: 5px;
+display:block;
+}
+.nav a:hover{
+text-decoration: underline;
+background-color: white;
+color: white;
+}
+header h1{margin:0;
+}
+
+.card{border:thin solid black;
+box-shadow: 3px 3px 3px;
+width:200px;
+}
+
+.card figure{margin:0;}
+
+.card img{width: 100%;
+height: 100%;
+}
