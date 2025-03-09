@@ -97,9 +97,19 @@ footer {
     .container{ 
     flex-direction: column;
     }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar a{
+        display: block;
+        text-align: center;
+        border-bottom:1px solid black;
+    }
     .sidebar{ 
         width: 100%;
         height: auto;
+        max-height:none;
         }
     main{ 
         width: 100%;
@@ -107,8 +117,12 @@ footer {
 
     .cards{
     grid-template-columns: 1fr;
+    gap:10px;
     }
-   
+   .card {
+    max-width: 90%;
+    margin: 0; 
+}
 
 }
 @media ONLY screen AND (max-width: 450px){
