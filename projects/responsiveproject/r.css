@@ -56,6 +56,21 @@ html,body {
     height:auto;
     border-radius:8px;
 }
+.sidebar .card img {
+    width:220px;
+    height:auto;
+    display:block;
+    margin: 0 
+}
+
+.sidebar .card {
+background:none;
+box-shadow:none;
+border:none;
+padding:0;
+text-emphasis: center;
+align-items: center;
+}
 .sidebar ul{
     text-align: left;
 }
