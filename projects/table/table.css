@@ -51,6 +51,7 @@ table caption {
 
 
 .sidebar {
+    flex: 0 1 150px;   
     width: 100%; 
     background-color:#f2b661;
     padding: 20px;
