@@ -1,0 +1,48 @@
+body {font-family: 'Courier New', Courier, monospace;}
+
+.form-row {
+    display:flex;
+    margin: 3px 0;
+    gap:10px 0;
+}
+.form-row label {
+width:150px;
+text-align: right;
+}
+
+.radio-row {
+    display: flex;
+    gap: 3px;
+    margin: 10px 0;
+}
+
+.form-spacer{
+    width: 150px;
+}
+
+input , textarea {
+    padding :10px;
+    font-size: 1.5em;
+    border-radius:3px;
+background-color:aqua;
+}
+
+fieldset{
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+legend{
+    padding : 10px;
+    background-color:blue;
+}
+
+@media only screen and (max-width: 600px){
+    .form-row {
+        display: block;
+    }
+    form-row label{
+        text-align: left;
+    }
+    .spacer{
+        text-align: left;
+    }
+}
