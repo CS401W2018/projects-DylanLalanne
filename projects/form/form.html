@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Ensures mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casual Project - Forms</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <header role="banner">
+    <h1 id="site-title">Casual Project - Forms</h1>
+  </header>
+
+  <main role="main">
+    <form action="#" method="post" aria-labelledby="site-title">
+
+        <fieldset>
+            <legend>Account Details</legend>
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input 
+                type="text" 
+                id="username" 
+                name="username" 
+                placeholder="username" 
+                required 
+                aria-required="true">
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="secure password required" 
+                required 
+                aria-required="true">
+            </div>
+          </fieldset>
+   
+      <fieldset>
+        <legend>Personal Infomation</legend>
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+           <input 
+            type="text" 
+            id="fullname" 
+            name="fullname" 
+            placeholder="Full Name" 
+            required 
+            aria-required="true">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="you@example.com" 
+            required 
+            aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder="(123) 456-7890" 
+            aria-label="Phone NNumber">
+        </div>
+      </fieldset>
+
+   
+    <fieldset>
+        <legend>Additional Information</legend>
+        <div class="form-group">
+          <label for="bio">Biography:</label>
+          <textarea 
+          id="bio" 
+            name="bio" 
+            rows="4" 
+            placeholder="Tell us abot yourself"></textarea>
+        </div>
+        <div class="form-group checkbox-group">
+          <input 
+            type="checkbox" 
+            id="yes" 
+            name="yes" 
+            aria-describedby="terms-desc">
+          <label for="yes">I agree to the terms and conditions</label>
+        </div>
+        <div class="form-group">
+          <label>Gender:</label>
+          <div class="radio-group">
+            <input 
+              type="radio" 
+              id="male" 
+              name="gender" 
+              value="male">
+            <label for="male">Male</label>
+            <input 
+              type="radio" 
+              id="female" 
+              name="gender" 
+              value="female">
+            <label for="female">Female</label>
+            <input 
+              type="radio" 
+              id="other" 
+              name="gender" 
+              value="other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <select 
+            id="country" 
+            name="country" 
+            aria-label="Select your country">
+            <option value="">Select your country</option>
+            <option value="USA">United States</option>
+            <option value="CANA">Canada</option>
+            <option value="UK">United Kingdom</option>
+            <option value="AU">Australia</option>
+          </select>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Casual Project Forms. All rights reserved.</p>
+  </footer>
+</body>
+</html>

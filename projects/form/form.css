@@ -1,0 +1,133 @@
+/* Base styles and typography */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    
+  }
+  
+
+  header, footer {
+    background-color: rgb(78, 78, 118);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer p {
+    font-size: 15px;
+    margin: 0;
+  }
+ 
+  main {
+    padding: 20px;
+  }
+  
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(3,3,3,3.1);
+  }
+  
+
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    width: 160px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+
+  .form-group
+  .form-group textarea,
+  .form-group select {
+    flex: 1;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+
+  .radio-group{
+    display: flex;
+    align-items: center;
+  }
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .checkbox-group {
+    margin-right: 5px;
+  }
+  .radio-group{
+    margin-right: 5px;}
+  
+  .radio-group label,
+  .checkbox-group label {
+    margin-right: 15px;
+  }
+  
+
+  fieldset {
+    border: 2px solid red;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  legend {
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #2c3e50;
+  }
+  
+
+  button[type="submit"] {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    font-size: 25px;
+  }
+  
+  button:hover {
+    background-color: #219150;
+  }
+
+  @media (max-width: 600px) {
+    .form-group {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .form-group label {
+      
+      margin-bottom: 5px;
+    }
+    
+    button{
+      width: 100%;
+      padding: 15px;
+      font-size: 25px;
+    }
+  }
+  
