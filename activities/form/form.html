@@ -9,7 +9,7 @@
 <body>
     <header> <h1> Forms </h1></header>
     <main> 
-        <form action ="processing html"method ="get">
+        <form action ="processing html"method ="get" id = "myForm">
 
             <fieldset>
                 <legend> sign up </legend>
@@ -62,11 +62,34 @@
 
     </main>
     <footer> <p> &copy; 2025 Dylan Lalanne 
+        What is JavaScript? How did it get its name?
+        It is a backend language that was named due to java and retaining its name for marketing. 
+        What are the two ways you can run JavaScript?
+        You can run it on a server, or locally in a browser.
+        What was the most popular front-end js library?
+        JQuery
+        What is the most popular front-end js library today?
+        React.JS
 
-        What are different ways to style your form?
-       Using fieldboxs, legends, labels. 
-        Why does the professor like to use flex?
-        Easy alignment, auto raping, simplem and more responive.
     </p></footer>
+    <script>    
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form Submitted');
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementByID('email').value;
+            const age = document.getElementByID('age').value;
+            const password = document.getElementByID('password').value;
+
+            if( !fullname || !email);
+                alert('You need a name and email');
+            
+            
+
+            console.log(fullname)
+
+
+        });
+    </script>
 </body>
 </html>
