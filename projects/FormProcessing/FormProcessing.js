@@ -18,13 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (username.length < 1 || username.length > 30) { 
         alert("Input Username")
+        return;
       }
 
       if (password.length < 1 || password.length > 30) {
         alert("Input Password")
+        return;
       }
       if (phone.length < 1 || phone.length > 30) {
         alert("Input Phone")
+        return;
       }
 
       if (!name || !email || !username || !password || !phone) {
