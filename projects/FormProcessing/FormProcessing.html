@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+    <link rel="stylesheet" href="FormProcessing.css">
+ 
+</head>
+<body>
+    <header role = "banner"> 
+        <h1> FORM </h1> 
+    </header>
+    <main role = "main"> 
+        <form action="#" method = "post" aria-labelby="site-title"> 
+        
+        <fieldset> 
+            <legend> Account Details </legend> 
+            <div class ="form-group"> 
+                <label for="username"> Username: </label>
+                <input type = text
+                id = "username"
+                name = "username"
+                placeholder = "username"
+                required 
+                aria-requireed = "true">
+            </div>
+            <div class = "form-group">
+                <label for = "password"> Password: </label>
+                <input type = password
+                name = "password"
+                id = "password"
+                placeholder = "password"
+                required
+                aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                 <input 
+                  type="text" 
+                  id="fullname" 
+                  name="fullname" 
+                  placeholder="Full Name" 
+                  required 
+                  aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="your@email" 
+                  required 
+                  aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  placeholder="(123) 456-7890" 
+                  aria-label="Phone Number">
+              </div>
+            </fieldset>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <script src="FormProcessing.js"></script>
+    
+</body>
+</html>
