@@ -1,0 +1,16 @@
+body {font-family: 'Courier New', Courier, monospace;}
+
+#photo img{
+    width: 350px;
+}
+
+
+.btn {
+    display: block;
+    padding: 10px;
+    color: green;
+    width:100px;
+    text-align: center;
+    background-color: aquamarine;
+    transition: background-color 2s ease-in-out;
+}
