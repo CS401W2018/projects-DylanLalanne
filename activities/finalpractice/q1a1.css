@@ -1,0 +1,22 @@
+body {
+font-family: 'Courier New', Courier, monospace;
+font-size: 20px; 
+text-align: center;
+background-color: brown;
+color: blue; 
+}
+
+div {
+    display: block;
+    margin: 10px; 
+    padding: 100px; 
+    border: black; 
+}
+
+.content {
+    color: orange; 
+}
+
+#p {
+    color: purple; 
+}
