@@ -1,165 +1,75 @@
-html,body {
-    height:100%;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-.header{
-    text-align: center;
-    background: beige;
-    padding: 10px;
-    font-size:15px; 
-    height: auto;
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color:#0f172a;
+    color: white;
 }
-
-.navbar {
+header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Space Around?  */
-    background: black;
-    padding: 0px;
-    margin: 0px;
-}
-
-.navbar a {
-    display: block;
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.container {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items:stretch;
-    justify-content: space-between;
+    align-items: flex-start;
     width:100%;
+    top:0px;
+    position: fixed;
+    padding: 0px 0px 0px 0px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.05);
+    margin-left: -6px;
+  }
+header h1{
+    margin-top:0;
+    font-size: 26px;
 }
 
-.sidebar {
-    flex:0 0 25%;
-    background: darkcyan;
-    height: 100vh;
-    max-width: 300px;
-    padding:15px;
-    box-sizing:border-box;
+header input{
+    padding: 8px 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    width: 250px;
+    height: 30px;
+}
+.navbar{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-left:0 !important;
-
+    flex-direction: row;
+    width:100%;
+    top:60px;
+    position: fixed;
+    padding: 5px 0px 5px 0px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.05);
+    margin-left: -10px;
 }
-.sidebar img {
-    max-width: 100%;
-    width:200px;
-    align-self: center;
-    height:auto;
-    border-radius:8px;
-}
-.sidebar .card img {
-    width:220px;
-    height:auto;
-    display:block;
-    margin: 0 
-}
-
-.sidebar .card {
-background:none;
-box-shadow:none;
-border:none;
-padding:0;
-text-emphasis: center;
-align-items: center;
-}
-.sidebar ul{
-    text-align: left;
-}
-
-main {
-    flex: 1;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px !important;
-    margin-top: 30px;
-}
-
-.card {
-    background: antiquewhite;
-    text-align: center;
-    padding: 25px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-    margin-bottom:20px !important;
-}
-
-.card img {
-    min-width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-footer {
-    background: antiquewhite;
-    padding: 20px;
-    text-align: center;
-    margin-top: auto;
-    position:relative;
-    position: 0;
-}
-
-@media ONLY screen AND (max-width: 700px){
-    .container{ 
-    flex-direction: column;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
+nav a{
+    flex-direction: row;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.2s;
   
-    .navbar a{
-        display: block;
-        text-align: center;
-        border-bottom:1px solid black;
-    }
-    
-    .sidebar{ 
-        width: 100%;
-        height: auto;
-        max-height:none;
-        height:auto;
-        }
-    main{ 
-        width: 100%;
-        }
-
-    .cards{
-    grid-template-columns: 1fr;
-    gap:10px;
-    }
-   .card {
-    max-width: 90%;
-    margin: 0; 
+}
+nav a:hover{
+    transition-duration: 1;
+    color: grey;
 }
 
-}
-@media ONLY screen AND (max-width: 450px){
-.navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-@media print{
-    .navbar,
-    .sidebar,
-    footer{
-        display: none;
-    }
-}
+h1,h2,h3{
+    color: white;
 
+}
+.spacing {
+    margin-top: 300px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width:100%;
+    bottom:0px;
+    padding: 0px 0px 0px 0px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.05);
+    margin-left: -6px;
+}

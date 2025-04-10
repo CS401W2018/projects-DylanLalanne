@@ -2,18 +2,21 @@ body {
 font-family: 'Courier New', Courier, monospace;
 font-size: 20px; 
 text-align: center;
-background-color: brown;
+background-color: white;
 color: blue; 
 }
 
 div {
-    display: block;
-    margin: 10px; 
-    padding: 100px; 
-    border: black; 
+    border: black;
+    border-width: 5px;
+    border-style:inset;
+    font-size: 20px;
 }
 
 .content {
+    display: block;
+    margin: 10px; 
+    padding: 30px; 
     color: orange; 
 }
 
