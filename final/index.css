@@ -11,6 +11,7 @@ body{
    padding: 20px;
    display: flex;
 }
+
 header {
     display: flex;
     flex-direction: row;
@@ -68,6 +69,15 @@ nav a:hover{
     transition: 2;
     color: #c7c7c771;
 }
+.button{
+    background-color: aquamarine;
+
+}
+
+.button:hover{
+    transform-style: flat;
+}
+
 
 h1,h2,h3{
     color: white;
