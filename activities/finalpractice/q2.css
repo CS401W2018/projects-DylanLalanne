@@ -1,0 +1,33 @@
+.team-grid{
+    display:grid;
+    gap:20px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.member{
+    margin:10px;
+    padding: 20px;
+    background-color: red;
+    height:15px;
+    border: 2px solid;
+}
+
+.member-a{
+    background-color: blue;
+    grid-column: 1 / span(2)
+}
+.member-b{
+    background-color: orange;
+}
+.member-c{
+    background-color: yellow;
+}
+.member-d{
+    background-color: red;
+}
+.member-e{
+    background-color: green;
+}
+.member-f{
+    background-color: purple
+}

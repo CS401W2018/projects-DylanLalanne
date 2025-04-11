@@ -9,6 +9,7 @@ body{
    padding-bottom: 60px;
    box-sizing: border-box;
    padding: 20px;
+   display: flex;
 }
 header {
     display: flex;
@@ -63,13 +64,17 @@ nav a:hover{
     transition-duration: 1;
     color: grey;
 }
+.active{
+    transition: 2;
+    color: #c7c7c771;
+}
 
 h1,h2,h3{
     color: white;
 
 }
 .spacing {
-    margin-top: 300px;
+    margin-top: 0px;
 }
 footer{
     display: flex;
