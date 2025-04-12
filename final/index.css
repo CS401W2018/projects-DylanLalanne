@@ -245,6 +245,7 @@ footer {
      display: flex;
      flex-direction: column;
      justify-content: center;
+     align-items:center;
   }
   .wrapperresources {
      padding-top:90px;
@@ -270,6 +271,7 @@ form {
     max-width: 800px;
     padding-top:40px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    
   }
   
   fieldset {
@@ -289,7 +291,7 @@ form {
   }
   
   .form-group label {
-    margin-bottom: 8px;
+    margin-bottom: 9px;
     font-size: 20px;
     color: #eeeeeed4;
   }
@@ -300,7 +302,7 @@ form {
     background-color: #1e293b;
     color: white;
     border: 1px solid #ccc;
-    border-radius: 14px;
+    border-radius: 15px;
     outline: none;
     font-size: 16px;
    
@@ -320,7 +322,7 @@ form {
     margin: 0;
   }
   
-  button[type="submit"] {
+  button{
     background-color: #00d4a7;
     color: white;
     padding: 14px 28px;
@@ -331,7 +333,7 @@ form {
     border: none;}
   
   
-  button[type="submit"]:hover {
+  button:hover {
     background-color: #00b48f;
    
   }
