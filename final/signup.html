@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title> 
     <link rel="stylesheet" href="index.css"> 
-    <link rel="signupstyle" href ="signup.css">
+    <link rel="signup" href ="signup.css">
     <link rel="javascript" href ="final.js">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -24,12 +24,25 @@
         <a href = "resources.html">Resources</a>
     </nav>
     <main class ="wrappersignup">
-    <div class = "spacing">
+    <div>
       <section class="card">
         <img src="signup.png" alt="Quantara Finance" />
     </section>
-        <h2> Take Control of your finances with Quantara </h1>
-            <p> O Quantara is a personal Finance hub-built for beginners looking to get started in personal finance. </p>
+        <h2> Why choose us?</h1>
+            <p> With hundreds of finance applications out there its 
+              important to identify whats right for you. Heres why we
+               think you should choose us.
+              
+            </p>
+            <ol> 
+              <li> 100% FREE </li>
+              <li> Easy to use, get started now</li>
+              <li> Designed for begineers</li>
+              <li> tried and tested, our methods work </li>
+            </ol>
+            
+            
+             
     </div>
     <h1> Sign Up </h2>
         <main role="main">
@@ -57,10 +70,7 @@
                         required 
                         aria-required="true">
                         
-                    </div>
-                
-               
-               
+                    </div>         
                 <div class="form-group">
                   <label for="email">Email:</label>
                   <input 
@@ -71,6 +81,42 @@
                     required 
                     aria-required="true">
                 </div>
+                <div class="form-group">
+                  <label for="income">Yearly Income:</label>
+                  <input 
+                    type="number" 
+                    name="income" 
+                    id="income" 
+                    placeholder="e.g. 50000" 
+                    min="0"
+                    required 
+                    aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                  <label for="debt">Debt Amount:</label>
+                  <input 
+                    type="number" 
+                    name="debt" 
+                    id="debt" 
+                    placeholder="e.g. 10000" 
+                    min="0"
+                    required 
+                    aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                  <label for="invested">Amount Invested:</label>
+                  <input 
+                    type="number" 
+                    name="invested" 
+                    id="invested" 
+                    placeholder="e.g. 5000" 
+                    min="0"
+                    required 
+                    aria-required="true">
+                </div>
+                
     
                 <br>
                 
@@ -112,6 +158,19 @@
             
           
         </form>
+
+        <h2> FAQ: </h2>
+            <p> Why do we ask for your country?</p>
+            <p>We use country data to understand where
+               you are coming from to provide applicable methods
+               in any economy. 
+            </p>
+            <p> Why do we ask for financial data?</p>
+            <p>We want to help you make money, we need your financial data to better help you. </p>
+            
+            <h2>Additional Questions? Contact us: <br> </h2>
+            <p>dylanlalanne@gmail.com </p>
+        
     </main>
         
 
