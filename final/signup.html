@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title> 
     <link rel="stylesheet" href="index.css"> 
+    <link rel="signupstyle" href ="signup.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
@@ -14,7 +15,7 @@
         <input type="text" placeholder="Search...">
     </header>
     <nav class = "navbar">
-        <a href = "index.html"></a>Home</a>
+        <a href = "index.html">Home</a>
         <a href = "Investing.html"> Investing</a>
         <a href = "Income.html"> Income </a>
         <a href = "Budget.html"> Budget </a>
@@ -33,7 +34,7 @@
                 <fieldset>
                     <legend>Account Details</legend>
                     <div class="form-group">
-                      <label for="username">Username:</label>
+                      <label for="username">Make a Username:</label>
                       <input 
                         type="text" 
                         id="username" 
@@ -43,7 +44,7 @@
                         aria-required="true">
                     </div>
                     <div class="form-group">
-                      <label for="password">Password:</label>
+                      <label for="password">Make a Password:</label>
                       <input 
                         type="password" 
                         id="password" 
@@ -51,20 +52,11 @@
                         placeholder="create your password" 
                         required 
                         aria-required="true">
+                        
                     </div>
-                  </fieldset>
-              <fieldset>
-                <legend>Personal Infomation</legend>
-                <div class="form-group">
-                  <label for="fullname">Full Name:</label>
-                   <input 
-                    type="text" 
-                    id="fullname" 
-                    name="fullname" 
-                    placeholder="Full Name" 
-                    required 
-                    aria-required="true">
-                </div>
+                
+               
+               
                 <div class="form-group">
                   <label for="email">Email:</label>
                   <input 
@@ -75,24 +67,9 @@
                     required 
                     aria-required="true">
                 </div>
-        
-                <div class="form-group">
-                  <label for="phone">Phone Number:</label>
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone" 
-                    placeholder="(123) 456-7890" 
-                    aria-label="Phone Number">
-                </div>
-                <div class="form-group checkbox-group">
-                  <input 
-                    type="checkbox" 
-                    id="yes" 
-                    name="yes" 
-                    aria-describedby="terms-desc">
-                  <label for="yes">I agree to the terms and conditions</label>
-                </div>
+    
+                <br>
+                
                 <div class="form-group">
                   <label for="country">Country:</label>
                   <select 
@@ -116,6 +93,14 @@
                     <option value="Mexico">Mexico</option>
                   </select>
                 </div>
+                <div class="form-group checkbox-group">
+                    <input 
+                      type="checkbox" 
+                      id="yes" 
+                      name="yes" 
+                      aria-describedby="terms-desc">
+                    <label for="yes">I agree to the terms and conditions</label>
+                  </div>
               </fieldset>
               <div class="form-group">
                 <button type="submit">Submit</button>
