@@ -11,24 +11,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const debt = document.getElementById("debt").value.trim();
     const invested = document.getElementById("invested").value.trim();
 
-    if (username.length < 1 || username.length > 30) {
+    if (username.length < 1 || username.length > 20) {
       alert("Input Username");
       return;
     }
-
-    if (password.length < 1 || password.length > 30) {
+    if (password.length < 1 || password.length > 20) {
       alert("Input Password");
       return;
     }
-    if (email.length < 1 || email.length > 30) {
+    if (email.length < 1 || email.length > 20) {
       alert("input email");
       return;
     }
-
-    if (!username || !password || !email || !income || !debt || !invested) {
-      alert("Please fill out all fields.");
+    if(income.length < 1 || income.length > 20) {
+        alert("input income");
+        return;
+    }
+    if(debt.length < 1 || debt.length > 20) {
+      alert("input debt");
       return;
     }
+      if(invested.length < 1 || income.length > 20) {
+      alert("input invested");
+      return;
+    }
+    
 
     const formData = {
       username: username,
@@ -41,21 +48,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Form Data:", formData);
 
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "data.json", true);
-    xhr.onload = function () {
-      if (xhr.status === 200) {
-        const response = JSON.parse(xhr.responseText);
-        alert("✅ Submission Successful!");
-
-        form.reset();
-      } else {
-        alert("Error: Unable to submit form.");
-      }
-    };
-    xhr.send();
+    fetch("data.json")
+  .then(response => {
+    if (!response.ok) throw new Error("Failed to load server response.");
+    return response.json();
+  })
+  .then(data => {
+    alert("✅ Submission Successful!\n\n" + data.message);
+    form.reset();
+  })
+  .catch(error => {
+    alert("❌ Error: Unable to fetch server response.");
+    console.error(error);
   });
 });
+});      
 
 
 
